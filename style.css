@@ -26,8 +26,10 @@ body {
 	text-align: center;
 }
 
-h1 {
+h1,
+text {
 	font-size: 72px;
+	font-weight: 400;
 }
 
 /*
@@ -41,10 +43,6 @@ h1.masking {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
-}
-
-text {
-	font-size: 72px;
 }
 
 .webkit {
