@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Text Masking</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body>
+		<div class="table">
+			<div class="table-cell">
+				<!-- START WEBKIT -->
+				<div class="webkit">
+					<h1 class="masking">CSS Text Masking</h1>
+				</div>
+				<!-- END WEBKIT -->
+
+				<!-- START FIREFOX -->
+				<div class="ff">
+					<style>
+						.svg-clipped {
+							clip-path: url(#svgPath);
+						}
+					</style>
+					<img class="svg-clipped" src="mask.jpg" height="100" width="auto">
+					<svg height="0" width="0">
+						<defs>
+							<clipPath id="svgPath">
+								<text x="0" y="50">CSS Text Masking</text>
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<!-- END FIREFOX -->
+			</div>
+		</div>
+	</body>
+</html>

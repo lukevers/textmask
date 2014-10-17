@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*
+|--------------------------------------------------------------------------
+| Basic Attributes / Styles
+|--------------------------------------------------------------------------
+*/
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.table {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+h1 {
+	font-size: 72px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| CSS Text Mask
+|--------------------------------------------------------------------------
+*/
+
+h1.masking {
+	background-image: url(mask.jpg);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+text {
+	font-size: 72px;
+}
+
+.webkit {
+	display: block;
+}
+
+.ff {
+	display: none;
+}
+
+@-moz-document url-prefix() {
+	.webkit {
+		display: none;
+	}
+
+	.ff {
+		display: block;
+	}
+}
